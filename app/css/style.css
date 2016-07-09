@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/DomineBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DomineBold.woff2") format("woff2"), url("../fonts/DomineBold.woff") format("woff"), url("../fonts/DomineBold.ttf") format("truetype"), url("../fonts/DomineBold.svg#Domine") format("svg");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular.svg#Montserrat") format("svg");
+}
+
+@font-face {
+  font-family: "Montserat";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/MontseratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontseratBold.woff2") format("woff2"), url("../fonts/MontseratBold.woff") format("woff"), url("../fonts/MontseratBold.ttf") format("truetype"), url("../fonts/MontseratBold.svg#Montserat") format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"), url("../fonts/OpenSansRegular.svg#Open Sans") format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold.woff2") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold.ttf") format("truetype"), url("../fonts/OpenSansBold.svg#Open Sans") format("svg");
+}
