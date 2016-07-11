@@ -1,34 +1,83 @@
-@font-face {
-  font-family: "Domine";
-  font-style: normal;
+@import 'https://fonts.googleapis.com/css?family=Domine:700|Montserrat:400,700|Open+Sans:400,700';
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #9aa0ab;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar .container .navbar-brand {
+  width: 140px;
+  height: 74px;
+  margin-left: 0px;
+  padding: 41px 0px 0px 13px;
+  background-color: #fa5c65;
+  -webkit-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  font-family: "Domine", serif;
+  font-size: 20px;
+  line-height: normal;
+  color: #fff;
   font-weight: bold;
-  src: url("../fonts/DomineBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DomineBold.woff2") format("woff2"), url("../fonts/DomineBold.woff") format("woff"), url("../fonts/DomineBold.ttf") format("truetype"), url("../fonts/DomineBold.svg#Domine") format("svg");
 }
 
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular.svg#Montserrat") format("svg");
+.navbar .container .navbar-brand span {
+  color: #314a5b;
 }
 
-@font-face {
-  font-family: "Montserat";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/MontseratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontseratBold.woff2") format("woff2"), url("../fonts/MontseratBold.woff") format("woff"), url("../fonts/MontseratBold.ttf") format("truetype"), url("../fonts/MontseratBold.svg#Montserat") format("svg");
+.navbar .container .navbar-toggle .icon-bar {
+  height: 4px;
+  background-color: #fa5c65;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"), url("../fonts/OpenSansRegular.svg#Open Sans") format("svg");
+.navbar .container .navbar-right {
+  position: relative;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold.woff2") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold.ttf") format("truetype"), url("../fonts/OpenSansBold.svg#Open Sans") format("svg");
+.navbar li {
+  min-height: 75px;
+  min-width: 20px;
+}
+
+.navbar li.last-li {
+  padding-right: 45px;
+}
+
+.navbar li a {
+  text-transform: uppercase;
+  padding: 15px 18px 15px 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 35px;
+  color: #263742;
+}
+
+.navbar li a.twitter {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  background-image: url("../img/twitter-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar li a.facebook {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  background-image: url("../img/facebook-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar li a:focus, .navbar li a:hover {
+  background-color: transparent;
 }
