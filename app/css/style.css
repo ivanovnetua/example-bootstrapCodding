@@ -29,8 +29,44 @@ body {
   color: #314a5b;
 }
 
+.navbar .container .social-mobile {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .container .social-mobile li {
+  min-height: 0px;
+  min-width: 0px;
+}
+
+.navbar .container .social-mobile li .twitter {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  right: 93px;
+  background-image: url("../img/twitter-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .container .social-mobile li .facebook {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  right: 55px;
+  background-image: url("../img/facebook-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .container .navbar-toggle {
+  margin-top: 16px;
+}
+
 .navbar .container .navbar-toggle .icon-bar {
-  height: 4px;
+  height: 3px;
   background-color: #fa5c65;
 }
 

@@ -54,9 +54,20 @@ body
 			font-weight: bold
 			span
 				color: $dark-color
+		.social-mobile
+			list-style: none
+			display: inline-block
+			li
+				min-height: 0px
+				min-width: 0px
+				.twitter
+					+icons(twitter-icon, 19px, 93px)
+				.facebook
+					+icons(facebook-icon, 19px, 55px)
 		.navbar-toggle
+			margin-top: 16px
 			.icon-bar
-				height: 4px
+				height: 3px
 				background-color: $first-color
 		.navbar-right
 			position: relative
