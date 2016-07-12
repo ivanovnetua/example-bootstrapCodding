@@ -169,11 +169,11 @@ header {
   background-color: transparent;
 }
 
-section .row div {
+section .row > div {
   padding: 0px 10px;
 }
 
-section .row div:first-child {
+section .row > div:first-child {
   padding: 0px 15px;
 }
 
@@ -271,6 +271,64 @@ section h4 {
 
 .portfolio p:last-of-type {
   margin-bottom: 35px;
+}
+
+.our-team {
+  margin-top: 102px;
+}
+
+.our-team .row > div {
+  margin-top: 36px;
+}
+
+.our-team .team-player {
+  padding: 0px 5px;
+}
+
+.our-team .team-player:first-of-type {
+  padding: 0px 10px;
+}
+
+.our-team h2 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  margin: 0 0 14px 15px;
+}
+
+.our-team h4 {
+  margin: 0 0 0 15px;
+}
+
+.our-team .media-body {
+  padding-top: 7px;
+}
+
+.our-team .media-left, .our-team .media > .pull-left {
+  padding-right: 18px;
+}
+
+.our-team .name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: normal;
+  color: #314a5b;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.our-team .position {
+  font-style: 14px;
+  line-height: normal;
+  color: #f0454c;
+  padding-top: 0;
+  margin: 0;
+}
+
+.our-team .about {
+  font-style: 14px;
+  line-height: 20px;
+  color: #9aa0ab;
 }
 
 @media screen and (max-width: 768px) {

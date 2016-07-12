@@ -123,9 +123,9 @@ header
 // Sections styles
 
 section
-	.row div
+	.row > div
 		padding: 0px 10px
-	.row div:first-child
+	.row > div:first-child
 		padding: 0px 15px
 	h3
 		+fontAttr($decoration-font, 26px, 26px, $second-color)
@@ -179,6 +179,7 @@ section
 .advantages
 	margin-top: 60px
 
+
 // Poftfolio
 
 .portfolio
@@ -187,6 +188,46 @@ section
 		margin-bottom: 14px
 	p:last-of-type
 		margin-bottom: 35px
+
+
+//Team
+
+.our-team
+	margin-top: 102px
+	.row > div
+		margin-top: 36px
+	.team-player
+		padding: 0px 5px
+		&:first-of-type
+			padding: 0px 10px
+
+	h2
+		font-size: 32px
+		letter-spacing: -1px
+		margin: 0 0 14px 15px
+	h4
+		margin: 0 0 0 15px
+	.media-body
+		padding-top: 7px
+	.media-left, .media > .pull-left
+		padding-right: 18px
+	.name
+		+fontAttr($decoration-font, 22px, normal, $dark-color)
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 2px
+	.position
+		font-style: 14px
+		line-height: normal
+		color: $third
+		padding-top: 0
+		margin: 0
+	.about
+		font-style: 14px
+		line-height: 20px
+		color: $font-color
+
+
 
 
 
