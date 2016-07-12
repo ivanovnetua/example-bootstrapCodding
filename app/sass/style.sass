@@ -40,6 +40,39 @@ body
 
 // Header
 
+header
+	width: 100%
+	min-height: 1059px
+	background: url('../img/header-bg.png') no-repeat center
+
+.main-message
+	.jumbotron
+		background-color: transparent
+		padding: 0
+		margin: 254px 0 0 0
+		h5
+			+fontAttr($decoration-font, 48px, 53px, $dark-color)
+			text-transform: uppercase
+			letter-spacing: -1.5px
+			font-weight: bold
+			span
+				color: $first-color
+		p
+			+fontAttr($main-font, 21px, 40px, $dark-color)
+			letter-spacing: -0.5px
+		.btn-lg
+			margin-top: 17px
+			padding: 20px 42px
+			text-transform: uppercase
+			+fontAttr($main-font, 15px, normal, #fff)
+			background-color: $first-color
+			border-color: transparent
+			border-radius: 7px
+			font-weight: bold
+
+
+
+
 .navbar
 	border: none;
 	.container
@@ -61,9 +94,9 @@ body
 				min-height: 0px
 				min-width: 0px
 				.twitter
-					+icons(twitter-icon, 19px, 93px)
+					+icons(twitter-icon, 25px, 103px)
 				.facebook
-					+icons(facebook-icon, 19px, 55px)
+					+icons(facebook-icon, 25px, 65px)
 		.navbar-toggle
 			margin-top: 16px
 			.icon-bar
@@ -75,14 +108,24 @@ body
 		min-height: 75px
 		min-width: 20px
 		&.last-li
-			padding-right: 45px
+			padding-right: 29px
 		a
 			text-transform: uppercase
 			padding: 15px 18px 15px 22px
 			+fontAttr($decoration-font, 14px, 35px, $menu-color)
 			&.twitter
-				+icons(twitter-icon, 19px, 18px)
+				+icons(twitter-icon, 25px, 13px)
+				padding: 0px
 			&.facebook
-				+icons(facebook-icon, 19px, 0px)
+				+icons(facebook-icon, 25px, -5px)
+				padding: 0px
 			&:focus, &:hover
 				background-color: transparent
+
+
+
+// Responsive media
+
+@media screen and (max-width: 768px)
+	header
+		background-position: 75% 100%
