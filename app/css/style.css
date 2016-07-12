@@ -12,13 +12,13 @@ header {
   background: url("../img/header-bg.png") no-repeat top center;
 }
 
-.main-message .jumbotron {
+.slogan .jumbotron {
   background-color: transparent;
   padding: 0;
   margin: 254px 0 0 0;
 }
 
-.main-message .jumbotron h5 {
+.slogan .jumbotron h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 53px;
@@ -28,11 +28,11 @@ header {
   font-weight: bold;
 }
 
-.main-message .jumbotron h5 span {
+.slogan .jumbotron h5 span {
   color: #fa5c65;
 }
 
-.main-message .jumbotron p {
+.slogan .jumbotron p {
   font-family: "Open Sans", sans-serif;
   font-size: 21px;
   line-height: 40px;
@@ -40,7 +40,7 @@ header {
   letter-spacing: -0.5px;
 }
 
-.main-message .jumbotron .btn-lg {
+.slogan .jumbotron .btn-lg {
   margin-top: 17px;
   padding: 20px 42px;
   text-transform: uppercase;
@@ -197,6 +197,7 @@ section p {
   color: #9aa0ab;
   padding-top: 8px;
   margin-bottom: 20px;
+  padding-right: 10%;
 }
 
 section a {
@@ -210,7 +211,16 @@ section a {
 
 section a:hover, section a:active, section a:focus {
   color: #f0454c;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover:after, section a:active:after, section a:focus:after {
+  width: 17px;
+  right: -24px;
+  background-size: 17px 9px;
+  -webkit-transition: width .8;
+  transition: width .8;
 }
 
 section a:after {
@@ -222,11 +232,45 @@ section a:after {
   right: -19px;
   background-image: url("../img/arrow-icon.png");
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 26px;
+  color: #314a5b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin: 14px 0 20px 0;
+}
+
+section h2 span {
+  color: #f0454c;
+}
+
+section h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #314a5b;
+  margin-bottom: 16px;
 }
 
 .advantages {
   margin-top: 60px;
+}
+
+.portfolio {
+  margin-top: 103px;
+}
+
+.portfolio p:first-of-type {
+  margin-bottom: 14px;
+}
+
+.portfolio p:last-of-type {
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 768px) {

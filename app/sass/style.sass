@@ -45,7 +45,7 @@ header
 	min-height: 1059px
 	background: url('../img/header-bg.png') no-repeat top center
 
-.main-message
+.slogan
 	.jumbotron
 		background-color: transparent
 		padding: 0
@@ -137,14 +137,20 @@ section
 		+fontAttr($main-font, 15px, 22px, $font-color)
 		padding-top: 8px
 		margin-bottom: 20px
+		padding-right: 10%
 	a
 		position: relative
 		text-transform: uppercase
 		+fontAttr($decoration-font, 14px, 20px, $third)
 		&:hover, &:active, &:focus
 			color: $third
-			text-decoration: underline
-
+			text-decoration: none
+			font-weight: bold
+			&:after
+				width: 17px
+				right: -24px
+				background-size: 17px 9px
+				transition: width .8
 		&:after
 			content: ''
 			width: 12px
@@ -154,17 +160,33 @@ section
 			right: -19px
 			background-image: url('../img/arrow-icon.png')
 			background-repeat: no-repeat
-			background-position: center
-
+	h2
+		+fontAttr($decoration-font, 40px, 26px, $dark-color)
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: -1.5px
+		margin: 14px 0 20px 0
+		span
+			color: $third
+	h4
+		+fontAttr($main-font, 16px, 20px, $dark-color)
+		margin-bottom: 16px
 
 
 
 // Advantages
 
-
 .advantages
 	margin-top: 60px
 
+// Poftfolio
+
+.portfolio
+	margin-top: 103px
+	p:first-of-type
+		margin-bottom: 14px
+	p:last-of-type
+		margin-bottom: 35px
 
 
 
