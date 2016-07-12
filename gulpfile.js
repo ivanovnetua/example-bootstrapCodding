@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 	return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])
 	.pipe(sass({outputStyle: 'expanded', includePaths: require('node-bourbon').includePaths}).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
+		browsers: ['last 15 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'safari 5', 'opera 12.1', 'ios 6', 'android 4'],
 		cascade: false
 		}))
 	.pipe(gulp.dest('app/css'));
