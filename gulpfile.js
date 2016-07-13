@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 	return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])
 	.pipe(sass({outputStyle: 'expanded', includePaths: require('node-bourbon').includePaths}).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 15 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'safari 5', 'opera 12.1', 'ios 6', 'android 4'],
+		browsers: ['last 50 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'safari 5', 'opera 12.1', 'ios 6', 'android 4'],
 		cascade: false
 		}))
 	.pipe(gulp.dest('app/css'));
@@ -204,7 +204,7 @@ gulp.task('sass-compressed', function () {
 	return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])
 	.pipe(sass({outputStyle: 'compressed', includePaths: require('node-bourbon').includePaths}).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
+		browsers: ['last 50 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'safari 5', 'opera 12.1', 'ios 6', 'android 4'],
 		cascade: false
 		}))
 	.pipe(gulp.dest('build/css'));
@@ -212,7 +212,7 @@ gulp.task('sass-compressed', function () {
 
 
 
-//Images
+//Images minimization if need. Very slow.
 gulp.task('images-min', function(){
 	return gulp.src('app/img/**/*')
 	.pipe(imagemin({
@@ -223,13 +223,10 @@ gulp.task('images-min', function(){
 	});
 
 
-//Custom Js files compression
-
-
 
 //Build 
 
-gulp.task('build', ['clean-build','images-min','sass-compressed'], function () {
+gulp.task('build', ['clean-build','sass-compressed'], function () {
 	gulp.src(['app/fonts/**/*'])
 	.pipe(gulp.dest('build/fonts'));
 
@@ -238,6 +235,9 @@ gulp.task('build', ['clean-build','images-min','sass-compressed'], function () {
 
 	gulp.src(['app/favicons/**/*'])
 	.pipe(gulp.dest('build/favicons'));
+
+	gulp.src(['app/img/**/*'])
+	.pipe(gulp.dest('build/img'));
 
 	gulp.src(['app/*.php', 'app/.htaccess', 'app/htaccess.txt', 'app/robots.txt', 'app/sitemap.xml'])
 	.pipe(gulp.dest('build'));

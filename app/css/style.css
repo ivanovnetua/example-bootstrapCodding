@@ -55,8 +55,10 @@ header {
   background-color: #fa5c65;
   border-color: transparent;
   -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
   border-radius: 7px;
   font-weight: bold;
+  opacity: .8;
 }
 
 .navbar {
@@ -70,6 +72,7 @@ header {
   padding: 41px 0px 0px 13px;
   background-color: #fa5c65;
   -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
   font-family: "Domine", serif;
   font-size: 20px;
@@ -222,8 +225,12 @@ section a:hover, section a:active, section a:focus {
 section a:hover.more:after, section a:active.more:after, section a:focus.more:after {
   width: 17px;
   right: -24px;
+  -moz-background-size: 17px 9px;
+  -o-background-size: 17px 9px;
   background-size: 17px 9px;
   -webkit-transition: width .8;
+  -moz-transition: width .8;
+  -o-transition: width .8;
   transition: width .8;
 }
 
@@ -347,6 +354,7 @@ section h4 {
 
 .our-team img {
   -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
   border-radius: 150px;
 }
 
