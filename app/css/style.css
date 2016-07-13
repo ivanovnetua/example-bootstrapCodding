@@ -12,6 +12,10 @@ header {
   background: url("../img/header-bg.png") no-repeat top center;
 }
 
+#responsive-menu {
+  margin-left: 150px;
+}
+
 .slogan .jumbotron {
   background-color: transparent;
   padding: 0;
@@ -341,6 +345,11 @@ section h4 {
   margin: 19px 35px 0 0;
 }
 
+.our-team img {
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+}
+
 footer {
   padding-top: 30px;
 }
@@ -414,6 +423,7 @@ footer p {
   }
   #responsive-menu {
     text-align: right;
+    margin-left: 0px;
   }
   #responsive-menu ul {
     background: rgba(230, 234, 237, 0.7);
