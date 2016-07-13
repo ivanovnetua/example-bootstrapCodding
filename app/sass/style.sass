@@ -146,12 +146,12 @@ section
 			color: $third
 			text-decoration: none
 			font-weight: bold
-			&:after
+			&.more:after
 				width: 17px
 				right: -24px
 				background-size: 17px 9px
 				transition: width .8
-		&:after
+		&.more:after
 			content: ''
 			width: 12px
 			height: 9px
@@ -194,13 +194,15 @@ section
 
 .our-team
 	margin-top: 102px
+	.container
+		padding-bottom: 58px
+		border-bottom: 1px solid #e6eaed
 	.row > div
 		margin-top: 36px
 	.team-player
 		padding: 0px 5px
 		&:first-of-type
 			padding: 0px 10px
-
 	h2
 		font-size: 32px
 		letter-spacing: -1px
@@ -226,9 +228,51 @@ section
 		font-style: 14px
 		line-height: 20px
 		color: $font-color
+	.more
+		float: right
+		margin: 19px 35px 0 0
 
+//Footer
 
-
+footer
+	padding-top: 30px
+	ul
+		position: relative
+	li
+		display: inline-block
+	.icon
+		&:before
+			content: ''
+			position: absolute
+			background-repeat: no-repeat
+			background-position: center
+		&.twitter:before
+			width: 20px
+			height: 16px
+			top: 4px
+			left: 2px
+			background-image: url(../img/twitter-f-icon.png)
+		&.instagram:before
+			width: 18px
+			height: 18px
+			top: 3px
+			left: 44px
+			background-image: url(../img/instagram-icon.png)
+		&.facebook:before
+			width: 18px
+			height: 18px
+			top: 3px
+			left: 80px
+			background-image: url(../img/facebook-f-icon.png)
+		&.googlepl:before
+			width: 18px
+			height: 18px
+			top: 3px
+			left: 116px
+			background-image: url(../img/googlepl-icon.png)
+	p
+		text-align: right
+		+fontAttr($main-font, 13px, 22px, #b9c0c6)
 
 
 

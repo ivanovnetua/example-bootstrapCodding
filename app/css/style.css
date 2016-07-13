@@ -215,7 +215,7 @@ section a:hover, section a:active, section a:focus {
   font-weight: bold;
 }
 
-section a:hover:after, section a:active:after, section a:focus:after {
+section a:hover.more:after, section a:active.more:after, section a:focus.more:after {
   width: 17px;
   right: -24px;
   background-size: 17px 9px;
@@ -223,7 +223,7 @@ section a:hover:after, section a:active:after, section a:focus:after {
   transition: width .8;
 }
 
-section a:after {
+section a.more:after {
   content: '';
   width: 12px;
   height: 9px;
@@ -275,6 +275,11 @@ section h4 {
 
 .our-team {
   margin-top: 102px;
+}
+
+.our-team .container {
+  padding-bottom: 58px;
+  border-bottom: 1px solid #e6eaed;
 }
 
 .our-team .row > div {
@@ -329,6 +334,70 @@ section h4 {
   font-style: 14px;
   line-height: 20px;
   color: #9aa0ab;
+}
+
+.our-team .more {
+  float: right;
+  margin: 19px 35px 0 0;
+}
+
+footer {
+  padding-top: 30px;
+}
+
+footer ul {
+  position: relative;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer .icon:before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer .icon.twitter:before {
+  width: 20px;
+  height: 16px;
+  top: 4px;
+  left: 2px;
+  background-image: url(../img/twitter-f-icon.png);
+}
+
+footer .icon.instagram:before {
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 44px;
+  background-image: url(../img/instagram-icon.png);
+}
+
+footer .icon.facebook:before {
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 80px;
+  background-image: url(../img/facebook-f-icon.png);
+}
+
+footer .icon.googlepl:before {
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 116px;
+  background-image: url(../img/googlepl-icon.png);
+}
+
+footer p {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #b9c0c6;
 }
 
 @media screen and (max-width: 768px) {
