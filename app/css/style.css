@@ -433,6 +433,9 @@ footer p {
   section h2 {
     margin-top: 85px;
   }
+  section .row > div, section .row > div:first-child {
+    padding-top: 20px;
+  }
   footer p {
     text-align: left;
   }
