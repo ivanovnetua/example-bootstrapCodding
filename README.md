@@ -3,7 +3,7 @@ EXAMPLE RESPONSIVE TEMPLATE
 
 
 
-This template is template that I made for example. This repo include html/css files and psd for compare.
+This template that I made for example. This repo include html/css files and psd for compare.
 
 ## Author
 
