@@ -213,7 +213,7 @@ gulp.task('images-min', function(){
 // Html minimization if need
 
 gulp.task('html-min', function(){
-	gulp.src(['app/*.html'])
+	gulp.src(['build/*.html'])
 	.pipe(htmlmin({collapseWhitespace: true, processConditionalComments: true}))
 	.pipe(gulp.dest('build'));
 	});
