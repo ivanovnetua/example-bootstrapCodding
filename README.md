@@ -1,4 +1,4 @@
-START RESPONSIVE TEMPLATE
+EXAMPLE RESPONSIVE TEMPLATE
 ==============================
 
 
@@ -7,5 +7,5 @@ This template is template that I made for example. This repo include html/css fi
 
 ## Author
 
-###**Vladimir Ivanov** ([ivanov.net.ua](https://www.npmjs.com))
+###**Vladimir Ivanov** ([ivanov.net.ua](https://ivanov.net.ua))
 
